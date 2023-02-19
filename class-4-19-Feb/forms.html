@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Controls</title>
+  </head>
+  <body>
+    <h1>< Left Angle Bracket</h1>
+    <form action="http://www.example.com/login.php">
+      <p class="adnan-irfan">Search:</p>
+      <input
+        type="search"
+        name="search"
+        placeholder="Enter keyword to Search"
+      />
+      <input type="submit" value="Search" />
+
+      <hr />
+      <!-- <label for="username">Departure date:</label>
+      <input type="date" name="depart" />
+      <input type="submit" value="Submit" />
+
+      <hr />
+      <label for="username">Username:</label>
+      <input type="text" name="username" required="required" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" required="required" />
+      <input type="submit" value="Submit" /> -->
+
+      <hr />
+      <p>Subscribe to our email list:</p>
+      <input type="text" name="email" />
+      <input
+        type="image"
+        src="../class-3-12-Feb/Images/image2.jpeg"
+        width="100"
+        height="20"
+      />
+
+      <p>Upload your song in MP3 format:</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+
+      <p>
+        Do you play any of the following instruments? (You can select more than
+        one option by holding down control on a PC or command key on a Mac while
+        selecting different options.)
+      </p>
+      <select name="instruments" size="3" multiple="multiple">
+        <option value="guitar" selected="selected">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard" selected="selected">Keyboard</option>
+        <option value="bass">Bass</option>
+      </select>
+
+      <p>What device do you listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio" selected>Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+      <p>
+        Please select your favorite music service(s):
+        <br />
+        <input
+          type="checkbox"
+          name="service"
+          value="itunes"
+          checked="checked"
+        />iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+      </p>
+      <p>
+        Please select your favorite genre:
+        <br />
+        <input type="radio" name="genre" value="rock" /> Rock
+        <input type="radio" name="genre" value="pop" />
+        Pop
+        <input type="radio" name="genre" value="jazz" />
+        Jazz
+      </p>
+      <hr />
+      <label>Username</label>
+      <input type="text" maxlength="5" name="username" />
+
+      <br />
+
+      <label>Password</label>
+      <input type="password" maxlength="5" name="password" />
+
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <form action="">
+      <p>What did you think of this gig?</p>
+      <textarea name="comments" cols="5" rows="2">
+Enter your comments...
+      </textarea>
+    </form>
+  </body>
+</html>
