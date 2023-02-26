@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <style>
+      @font-face {
+        font-family: "m1";
+        src: url("fonts/Mynerve-Regular.ttf");
+      }
+      h1,
+      h2 {
+        font-family: m1, Georgia, serif;
+      }
+      .note {
+        color: blue;
+        font-family: "Times New Roman", Times, serif;
+      }
+      #para {
+        color: saddlebrown;
+      }
+      p.introduction {
+        color: red;
+      }
+      li > a,
+      li a {
+        color: orange;
+      }
+      h1 + p {
+        font-size: 30px;
+      }
+      h1 ~ p {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="top" class="introduction">Kitchen Garden Calendar</h1>
+    <p class="introduction">
+      Here you can read our handy guide about what to do when.
+    </p>
+    <p id="para" class="introduction note">
+      This page was written by
+      <a href="mailto:ivy@example.org"> ivy@example.org</a> for
+      <a href="http://www.example.org">Example</a>.
+    </p>
+    <h2>Spring</h2>
+    <ul>
+      <li>
+        <p><a href="mulch.html"> Spring mulch vegetable beds</a></p>
+      </li>
+      <li><a href="potato.html"> Plant out early potatoes</a></li>
+      <li><a href="tomato.html"> Sow tomato seeds</a></li>
+      <li><a href="beet.html"> Sow beet seeds</a></li>
+      <li><a href="zucchini.html"> Sow zucchini seeds</a></li>
+      <li><a href="rhubarb.html"> Deadhead rhubarb flowers</a></li>
+    </ul>
+    <p>
+      <a href="#top">Top of page</a>
+    </p>
+  </body>
+</html>
