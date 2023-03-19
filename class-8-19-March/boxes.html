@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+    <style>
+      /* Add any CSS styles here */
+      header {
+        background-color: #238d76;
+        color: #fff;
+        margin: 25px;
+        height: 60px;
+        text-align: center;
+        font-size: x-large;
+      }
+      body {
+        margin: 0;
+        background-color: aquamarine;
+      }
+      .container {
+        display: flex;
+        text-align: center;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 25px;
+        height: 750px;
+      }
+
+      footer {
+        background-color: #238d76;
+        color: #fff;
+        margin: 25px;
+        height: 60px;
+        text-align: center;
+        font-size: x-large;
+      }
+
+      aside {
+        float: left;
+        width: 20%;
+        background-color: green;
+        margin: 0px 25px 0px 0px;
+        box-sizing: border-box;
+        height: 750px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        color: white;
+      }
+      article {
+        float: right;
+        box-sizing: border-box;
+        flex-grow: 1;
+        margin: 0px 0px 0px 25px;
+        background-color: orange;
+        height: 100%;
+        padding: 20px 0px 20px 0px;
+        font-size: x-large;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .image {
+        float: inline-end;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-end;
+      }
+
+      h1 {
+        display: inline;
+        justify-content: center;
+        align-self: center;
+      }
+      img {
+        width: 30%;
+      }
+      #img1 {
+        height: 250px;
+        background-color: yellow;
+        width: 27.5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #img2 {
+        height: 250px;
+        background-color: yellow;
+        width: 27.5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #img3 {
+        height: 250px;
+        background-color: yellow;
+        width: 27.5%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .article{
+            height: 400px;
+            background-color: pink;
+        }
+       */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>HEADER</h1>
+    </header>
+    <div class="container">
+      <aside>
+        <h2 class="aside">ASIDE</h2>
+      </aside>
+      <article>
+        <h2 class="article">ARTICLE</h2>
+        <div class="image">
+          <p id="img1">Image 1</p>
+          <p id="img2">Image 2</p>
+          <p id="img3">Image 3</p>
+        </div>
+      </article>
+    </div>
+    <footer>
+      <h1>FOOTER</h1>
+    </footer>
+  </body>
+</html>

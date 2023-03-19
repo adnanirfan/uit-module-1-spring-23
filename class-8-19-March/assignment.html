@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>task3</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      header {
+        background-color: rgb(87, 244, 255);
+        text-align: center;
+      }
+      #container {
+        display: flex;
+        height: 200px;
+      }
+      #container #left-side {
+        flex: 1;
+        height: 100%;
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        /* gap: 30px; */
+      }
+      #container #left-side #hero {
+        background-color: pink;
+        flex: 4;
+      }
+      #container #left-side #sidebar {
+        background-color: greenyellow;
+        flex: 6;
+      }
+      #container #right-side {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+      }
+      #container #right-side #main-content {
+        background-color: orange;
+        flex: 7;
+      }
+      #container #right-side #main-content p {
+        font-size: 10px;
+      }
+      #container #right-side #extra-content {
+        background-color: grey;
+        flex: 3;
+      }
+      #related {
+        display: flex;
+      }
+      #related #images {
+        background-color: green;
+        flex: 2;
+      }
+      #related #posts {
+        background-color: rgb(253, 129, 255);
+        flex: 1;
+      }
+      footer {
+        background-color: rgb(255, 124, 63);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div id="container">
+      <div id="left-side">
+        <div id="hero">Hero</div>
+        <div id="sidebar">Sidebar</div>
+      </div>
+      <div id="right-side">
+        <div id="main-content">
+          Main Content
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            dignissimos animi ea, molestiae ducimus ipsam expedita quisquam quam
+            facere ex, perspiciatis, quos cumque distinctio non corporis
+            sapiente quod pariatur alias.
+          </p>
+        </div>
+        <div id="extra-content">Extra Content</div>
+      </div>
+    </div>
+    <div id="related">
+      <div id="images">Related Images</div>
+      <div id="posts">Related Posts</div>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>

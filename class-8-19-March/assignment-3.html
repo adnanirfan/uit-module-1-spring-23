@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3</title>
+    <!-- <link rel="stylesheet" href="./styles.css">
+    </link> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .mainBox {
+        width: 50%;
+        height: 600px;
+        margin: 0 auto;
+        background-color: whitesmoke;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        width: 90%;
+        margin: 10px auto 0;
+        background-color: #52d6e9;
+        text-align: center;
+        padding: 13px 0;
+      }
+
+      .container {
+        width: 90%;
+        padding: 10px;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .left-part {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .hero {
+        flex-grow: 1;
+        background-color: #d9c9e4;
+      }
+
+      .side-bar {
+        flex-grow: 2;
+        background-color: #a0c264;
+      }
+
+      .right-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        gap: 10px;
+      }
+
+      .mainContent {
+        flex-grow: 2;
+        background-color: #f6c733;
+      }
+
+      .extraContent {
+        flex-grow: 1;
+        background-color: #898989;
+      }
+
+      .post {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        gap: 10px;
+      }
+
+      .images {
+        flex-grow: 2;
+        padding: 25px;
+        background-color: #2cb776;
+      }
+
+      .relatedPost {
+        flex-grow: 1;
+        background-color: #f4ccde;
+      }
+
+      .footer {
+        background-color: #fea501;
+      }
+
+      .custom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- main box -->
+    <div class="mainBox">
+      <!-- header section -->
+      <div class="header">
+        <h2>header</h2>
+      </div>
+      <!-- container -->
+      <div class="container">
+        <!-- left side -->
+        <div class="left-part">
+          <!-- hero -->
+          <div class="hero custom">
+            <div>
+              <h2>hero</h2>
+            </div>
+          </div>
+          <!-- side bar -->
+          <div class="side-bar custom">
+            <div>
+              <h2>side bar</h2>
+            </div>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="right-part">
+          <!-- main content -->
+          <div class="mainContent custom">
+            <div>
+              <h2>main content</h2>
+            </div>
+          </div>
+          <!-- extra content -->
+          <div class="extraContent custom">
+            <div>
+              <h2>extra content</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- post sections -->
+      <div class="post">
+        <!-- images  -->
+        <div class="images custom">
+          <div>
+            <h2>related images</h2>
+          </div>
+        </div>
+        <!-- related post -->
+        <div class="relatedPost custom">
+          <div>
+            <h2>related post</h2>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div class="header footer">
+        <h2>footer</h2>
+      </div>
+    </div>
+  </body>
+</html>
