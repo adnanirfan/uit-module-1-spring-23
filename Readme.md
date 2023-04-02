@@ -62,9 +62,13 @@ Class - 8
 
 Class - 9
 
-    - media-queries
-    - Javascript
+    - CSS media-queries
+    - Javascript Ch # 1-9
     - Assignment (Exercise)
+
+Class - 10
+
+    - Ch # 10-14 [if else]
 
 Links
 
