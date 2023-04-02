@@ -44,5 +44,28 @@ Class - 6
     - min-width
     - min-height
 
+Class - 7
+
+    -
+    - Flexbox Froggy
+
+Class - 8
+
+    - Position (absolute, relative, fixed, sticky)
+    - Flex Box
+        - display: flex
+        - justify-content
+        - align-items
+        - flex-direction
+        - flex-wrap
+        - flex: number
+
+Class - 9
+
+    - media-queries
+    - Javascript
+    - Assignment (Exercise)
+
 Links
+
 - [Javascript](https://media.licdn.com/dms/image/C4D22AQEDO0W5IOQW7g/feedshare-shrink_1280/0/1674126099284?e=1677715200&v=beta&t=Po43PAMGmK4ZZpnhHhxwbdw-ITiPdbEtCO6pMLtPr8Q)
