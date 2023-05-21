@@ -70,6 +70,28 @@ Class - 10
 
     - Ch # 10-14 [if else]
 
+Class - 11 - Online
+
+    -
+
+Class - 12
+
+    - ? 
+
+Class - 13
+
+    - Nested Loops
+    - Generating Random Numbers
+    - Finding Segments
+    - Regex
+    - indexOf, lastIndexOf
+    - replace
+    - change case (toLowerCase, toUpperCase)
+    - Math.round(5.4), Math.ceil(5.5), Math.floor
+    - string.charAt(index)
+
+
 Links
 
 - [Javascript](https://media.licdn.com/dms/image/C4D22AQEDO0W5IOQW7g/feedshare-shrink_1280/0/1674126099284?e=1677715200&v=beta&t=Po43PAMGmK4ZZpnhHhxwbdw-ITiPdbEtCO6pMLtPr8Q)
+

@@ -13,10 +13,13 @@
 var matchFound = false;
 var city = prompt("Enter City name");
 var cleanestCities = ["Karachi", "Lahore", "Islamabad", "Larakana"];
+
 for (var i = 0; i < cleanestCities.length; i++) {
+  console.log("iteration ", i);
   if (city.toLowerCase() === cleanestCities[i].toLowerCase()) {
     matchFound = true;
     alert("City Found");
+    break;
   }
 }
 if (matchFound === false) {
