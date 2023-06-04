@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <script>
+    // key: 0, value: 'a'
+    // var arr = ["a", 2, true];
+    // var obj = {};
+    // console.log(obj['name']);
+    // console.log(obj);
+
+    const players = { x: "X", y: "O" };
+    let currentPlayer = "x";
+
+    function mark(id, element) {
+      console.log(id, element);
+      console.log(element.textContent);
+      const currentSymbol = players[currentPlayer];
+      element.textContent = currentSymbol;
+
+      const result = checkWin(currentSymbol);
+
+      console.log(result);
+
+      if (result) {
+        document.getElementById("text").textContent =
+          "Player " + currentPlayer + " WIN!!";
+        return;
+      }
+
+      if (currentPlayer === "x") {
+        currentPlayer = "y";
+      } else {
+        currentPlayer = "x";
+      }
+      document.getElementById("text").textContent = currentPlayer;
+    }
+
+    /*
+       Horizontal
+       1 2 3
+       4 5 6
+       7 8 9
+
+       Vertical
+       1 4 7
+       2 5 8
+       3 6 9
+
+       Diagonal
+       1 5 9
+       3 5 7
+     */
+
+    function checkWin(currentSymbol) {
+      const tds = document.getElementsByTagName("td");
+      console.log(tds);
+
+      // Horizontal
+      if (
+        tds["cell-1"].textContent === currentSymbol &&
+        tds["cell-2"].textContent === currentSymbol &&
+        tds["cell-3"].textContent === currentSymbol
+      ) {
+        return true;
+      } else if (
+        tds["cell-4"].textContent === currentSymbol &&
+        tds["cell-5"].textContent === currentSymbol &&
+        tds["cell-6"].textContent === currentSymbol
+      ) {
+        return true;
+      } else if (
+        tds["cell-7"].textContent === currentSymbol &&
+        tds["cell-8"].textContent === currentSymbol &&
+        tds["cell-9"].textContent === currentSymbol
+      ) {
+        return true;
+      }
+
+      // Vertical
+      if (
+        tds["cell-1"].textContent === currentSymbol &&
+        tds["cell-4"].textContent === currentSymbol &&
+        tds["cell-7"].textContent === currentSymbol
+      ) {
+        return true;
+      } else if (
+        tds["cell-2"].textContent === currentSymbol &&
+        tds["cell-5"].textContent === currentSymbol &&
+        tds["cell-8"].textContent === currentSymbol
+      ) {
+        return true;
+      } else if (
+        tds["cell-3"].textContent === currentSymbol &&
+        tds["cell-6"].textContent === currentSymbol &&
+        tds["cell-9"].textContent === currentSymbol
+      ) {
+        return true;
+      }
+
+      // Diagonal
+      if (
+        tds["cell-1"].textContent === currentSymbol &&
+        tds["cell-5"].textContent === currentSymbol &&
+        tds["cell-9"].textContent === currentSymbol
+      ) {
+        return true;
+      } else if (
+        tds["cell-3"].textContent === currentSymbol &&
+        tds["cell-5"].textContent === currentSymbol &&
+        tds["cell-7"].textContent === currentSymbol
+      ) {
+        return true;
+      }
+
+      return false;
+    }
+
+    /*  function checkWin(currentClass) {
+       if (
+         // Check horizontal combinations
+         (cells[0].classList.contains(currentClass) &&
+           cells[1].classList.contains(currentClass) &&
+           cells[2].classList.contains(currentClass)) ||
+         (cells[3].classList.contains(currentClass) &&
+           cells[4].classList.contains(currentClass) &&
+           cells[5].classList.contains(currentClass)) ||
+         (cells[6].classList.contains(currentClass) &&
+           cells[7].classList.contains(currentClass) &&
+           cells[8].classList.contains(currentClass)) ||
+         // Check vertical combinations
+         (cells[0].classList.contains(currentClass) &&
+           cells[3].classList.contains(currentClass) &&
+           cells[6].classList.contains(currentClass)) ||
+         (cells[1].classList.contains(currentClass) &&
+           cells[4].classList.contains(currentClass) &&
+           cells[7].classList.contains(currentClass)) ||
+         (cells[2].classList.contains(currentClass) &&
+           cells[5].classList.contains(currentClass) &&
+           cells[8].classList.contains(currentClass)) ||
+         // Check diagonal combinations
+         (cells[0].classList.contains(currentClass) &&
+           cells[4].classList.contains(currentClass) &&
+           cells[8].classList.contains(currentClass)) ||
+         (cells[2].classList.contains(currentClass) &&
+           cells[4].classList.contains(currentClass) &&
+           cells[6].classList.contains(currentClass))
+       ) {
+         return true; // There is a win
+       } else {
+         return false; // No win
+       }
+     }
+    */
+  </script>
+  <body>
+    <table>
+      <tr>
+        <td id="cell-1" onClick="mark('1', this)">-</td>
+        <td id="cell-2" onClick="mark('2', this)">-</td>
+        <td id="cell-3" onClick="mark('3', this)">-</td>
+      </tr>
+      <tr>
+        <td id="cell-4" onClick="mark('4', this)">-</td>
+        <td id="cell-5" onClick="mark('5', this)">-</td>
+        <td id="cell-6" onClick="mark('6', this)">-</td>
+      </tr>
+      <tr>
+        <td id="cell-7" onClick="mark('7', this)">-</td>
+        <td id="cell-8" onClick="mark('8', this)">-</td>
+        <td id="cell-9" onClick="mark('9', this)">-</td>
+      </tr>
+    </table>
+
+    <h1>Player: <span id="text"></span></h1>
+  </body>
+</html>

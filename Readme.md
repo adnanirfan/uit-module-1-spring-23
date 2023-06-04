@@ -90,6 +90,19 @@ Class - 13
     - Math.round(5.4), Math.ceil(5.5), Math.floor
     - string.charAt(index)
 
+Class - 14
+
+    - Date 
+    - getTime
+    - getMinute second, hours, customied date, month, getFullYear
+
+Class - 15
+
+    - Functions (arguments, parameters)
+    - while loop, do while loop
+    - DOM onClick
+    - Switch
+    
 
 Links
 

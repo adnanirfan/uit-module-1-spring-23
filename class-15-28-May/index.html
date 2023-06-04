@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript</title>
+    <script>
+      // Define variables
+      var i = 0;
+      var temp = "";
+
+      // Function called when the button is clicked
+      function onClick() {
+        // Get the first h1 element
+        const h1 = document.getElementsByTagName("h1")[0];
+
+        // Check if temp is empty
+        if (!temp) {
+          temp = h1.textContent; // Store the initial text content
+        }
+
+        // Update the h1 text content with the stored text and the current value of i
+        h1.textContent = temp + ": " + i;
+
+        // Increment i
+        i++;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <h1>Hello M1</h1>
+
+    <!-- Button to trigger the onClick function -->
+    <button onclick="onClick();">Increment</button>
+  </body>
+</html>

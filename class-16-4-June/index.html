@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      var x = document.getElementById("hasham");
+      // console.log(x); // null
+      function myFunction(params) {
+        console.log("function clicked");
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#" id="hasham" onClick="myFunction()">Click</a>
+    <script>
+      var x = document.getElementById("hasham");
+      // console.log(x); // element
+
+      x.addEventListener("click", myFunction);
+    </script>
+  </body>
+</html>
