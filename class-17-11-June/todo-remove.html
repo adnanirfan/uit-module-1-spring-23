@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      // function name(params) {
+      //   console.log("function");
+      // }
+      // const x = (params) => {
+      //   console.log("arrow function");
+      // };
+
+      const todoList = [1, 2, 4, 5, 7, 8, 9, 10];
+      function renderList(params) {
+        console.log("renderList");
+      }
+      function addItem(params) {
+        console.log("addItem", params);
+        const todoInput = document.getElementById("todo-input");
+
+        const value = todoInput.value;
+        if (!value) return;
+
+        const list = document.getElementById("list");
+        const li = document.createElement("li");
+        const removeButton = document.createElement("button");
+        const id = "" + Math.random();
+
+        removeButton.addEventListener("click", (event) => {
+          document.getElementById(id).remove();
+        });
+        removeButton.textContent = "Remove Item";
+
+        li.id = id;
+        li.textContent = value;
+        li.appendChild(removeButton);
+
+        list.appendChild(li);
+        todoInput.value = "";
+      }
+    </script>
+  </head>
+  <body onload="renderList();">
+    <!-- input field -->
+    <!-- button -->
+    <!-- List items -->
+    <h1>Todo List</h1>
+
+    <input
+      type="text"
+      placeholder="Enter Todo"
+      required
+      max="10"
+      maxlength="20"
+      id="todo-input"
+      value=""
+    />
+
+    <button onclick="addItem(event);">Add Todo</button>
+
+    <ul id="list">
+      <!-- <li>1</li>
+      <li>2</li> -->
+    </ul>
+  </body>
+</html>

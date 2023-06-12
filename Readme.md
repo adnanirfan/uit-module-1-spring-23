@@ -102,7 +102,14 @@ Class - 15
     - while loop, do while loop
     - DOM onClick
     - Switch
-    
+
+Class - 16
+
+    - Links
+    - Buttons    
+    - Event Listener
+    - Objects
+    - Tic Tac Toe
 
 Links
 
