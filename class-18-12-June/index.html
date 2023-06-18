@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function addItem(params) {
+        console.log("addItem", params);
+        const todoInput = document.getElementById("todo-input");
+
+        const value = todoInput.value;
+        if (!value) return;
+
+        const list = document.getElementById("list");
+        const li = document.createElement("li");
+
+        // li.textContent = value;
+        li.innerHTML = value + "<button> Remove </button>";
+
+        list.appendChild(li);
+        todoInput.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <!-- input field -->
+    <!-- button -->
+    <!-- List items -->
+    <h1>Todo List</h1>
+
+    <input
+      type="text"
+      placeholder="Enter Todo"
+      required
+      max="10"
+      maxlength="20"
+      id="todo-input"
+      value=""
+    />
+
+    <button onclick="addItem(event);">Add Todo</button>
+
+    <ul id="list">
+      <li>1</li>
+      <li>2</li>
+    </ul>
+  </body>
+</html>
