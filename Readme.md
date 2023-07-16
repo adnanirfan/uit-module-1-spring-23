@@ -138,6 +138,14 @@ Class-17
         - element.textContent = "Hello World"
         - element.innerHTML = "Hello World"
 
+Class-18
+
+    - Functions 
+    - Inserted data from Form into a Table
+
+Class-19
+
+    - 
 
 Links
 
