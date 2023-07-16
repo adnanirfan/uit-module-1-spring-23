@@ -76,7 +76,7 @@ Class - 11 - Online
 
 Class - 12
 
-    - ? 
+    - ?
 
 Class - 13
 
@@ -92,7 +92,7 @@ Class - 13
 
 Class - 14
 
-    - Date 
+    - Date
     - getTime
     - getMinute second, hours, customied date, month, getFullYear
 
@@ -106,17 +106,16 @@ Class - 15
 Class - 16
 
     - Links
-    - Buttons    
+    - Buttons
     - Event Listener
     - Objects
     - Tic Tac Toe
-
 
 Class-17
 
     - Todo List
         - input
-        - ul 
+        - ul
         - li
         - button
         attributes
@@ -140,14 +139,28 @@ Class-17
 
 Class-18
 
-    - Functions 
+    - Functions
     - Inserted data from Form into a Table
 
 Class-19
 
-    - 
+    -
+
+Class-20
+
+    cd Desktop
+    git --version
+    git clone https://github.com/adnanirfan/module-1-test.git
+    cd module-1-test
+    git status
+    git status
+    git add .
+    git status
+    git commit -m "Added code for class 19 & 20"
+    git status
+    git log
+    git push
 
 Links
 
 - [Javascript](https://media.licdn.com/dms/image/C4D22AQEDO0W5IOQW7g/feedshare-shrink_1280/0/1674126099284?e=1677715200&v=beta&t=Po43PAMGmK4ZZpnhHhxwbdw-ITiPdbEtCO6pMLtPr8Q)
-
